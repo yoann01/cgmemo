@@ -1,0 +1,120 @@
+# info
+site_name: 			
+site_url: https://yoann01.github.io/cgmemo.github.io/
+site_author: yoann Granier
+site_description: Personal CG memo
+
+
+# Configuration
+theme:  
+  name: material
+  custom_dir: material/.overrides
+
+
+palette:
+  scheme: dracula
+  primary: deep purple
+  accent: deep purple
+
+font:
+  text: Roboto
+  code: Roboto Mono
+
+icon:
+  logo: octicons/copilot-16
+
+features:
+  - navigation.tabs
+  - navigation.top
+  - navigation.instant
+  - navigation.indexes
+  - navigation.sections
+  - navigation.path
+  - search.highlight
+  - search.share
+  - search.suggest 
+  - header.autohide
+  - content.code.annotate 
+
+#page tree
+nav:
+  - Home: index.md
+# MAYA    
+  - Maya:
+    - Introduction: Maya/IntroMaya.md
+    - Python:
+      - Scripts: Maya/Python/scripts.md
+# HOUDINI  
+  - Houdini:
+    - Introduction: Houdini/IntroHoudini.md
+    - Awesome Houdini: Houdini/AwesomeHoudini.md
+    - API:
+      - Python:
+        - Intro: Houdini/API/Python.md
+      - C++:
+        - Intro: Houdini/API/cplusplus.md
+    - LOPS:
+      - Solaris:
+        - intro: Houdini/LOPS/solaris.md
+    - Vex:
+      - Variables: Houdini/vex/variables.md
+      - Snippets: Houdini/vex/Snippets.md
+      - Environment variables: Houdini/hVars.md
+      - Point Cloud: Houdini/vex/ptc.md
+#COLORS
+  - Color:
+    - Light: colors/introToLight.md
+    - ColorSpace:
+      - CIE XYZ: colors/CIE.md
+      - ACES:
+        - Intro: colors/Aces.md
+        - Fundamentals: colors/ACES_Nuke_Fundamentals.md  
+        - Pipeline: colors/Aces_workflow.md
+        - Notes: colors/Aces_cheatSheet.md
+        - Install: colors/ACES_DCC.md
+#RENDERING
+  - NPR: 
+    - RealTime:
+      - GuiltyGear: rendering/NPR/GuiltyGear.md
+      - GDC: rendering/NPR/confs.md
+  - Rendering:
+    - LPE: rendering/LPE.md
+    - Raytracing: rendering/Raytracing101.md
+    - Lexique: rendering/Lexique.md
+    - OSLSamples: rendering/OSL_samples.md
+  - Compositing:
+    - Basic: compositing/Basics.md
+    - Integration: compositing/Integration.md
+    - Tracking: compositing/tracking.md
+# PROGRAMMING    
+  - Programming:
+    - build automation software:
+      - Cmake:
+        - Intro: C/Cmake.md
+    - Languages: 
+      - C++: 
+        - Numerics limit: C/numericsLimits.md
+      - Python: 
+        - Intro: python/python_intro.md
+        - Tips: python/python_tips.md
+        - Virtual Environment: python/venv.md
+        - Packages: python/packages.md
+        - PySide: python/PySide2.md
+    - Operating systems:
+      - windows:
+        - Hyper-V: C/hyperV.md
+        - Vcpkg: C/vcpkg.md
+    - Math:
+      - Math101: C/Math101.md
+      - Vector Projection: C/vecProject.md	
+#PIPELINE
+  - pipeline:
+    - Assets:
+      - USD: 
+        - USD Install: pipeline/USD/00_install_USD.md
+        - USD Start: pipeline/USD/01_start_USD.md
+    - Color:
+      - OCIO: 
+        - Intro: pipeline/OCIO.md
+        - Misconception: pipeline/OCIO_DT_misconceptions.md
+  
